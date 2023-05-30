@@ -1,4 +1,4 @@
-const memeberDB = new Map();
+const memberDB = new Map();
 const diaryDB = new Map();
 
 
@@ -7,16 +7,16 @@ const addMember = (id, pw, mail) => {
     console.log('addMember() CALLED!!!');
 
 
-    memeberDB.set(id, {
+    memberDB.set(id, {
         u_id: id,
         u_pw: pw,
         u_mail: mail,
     });
     diaryDB.set(id, []); // modify되므로 데이터를 배열에 쌓음
 
-    console.log(memeberDB.get(id));
+    console.log(memberDB.get(id));
 }
-const searchMember = () => {
+const searchMember = (id, pw) => {
     console.log('searchMember() CALLED!!!');
 
     let memObj = memberDB.get(id);

@@ -20,7 +20,7 @@ const initViews = () => {
     listWrap = document.querySelector('div.list_wrap');
 }
 
-const shoeSelectedView = (viewNo) => {
+const showSelectedView = (viewNo) => {
     console.log('showSelectedView() CALLED!!!');
 
     switch (viewNo) {
@@ -51,7 +51,7 @@ const shoeSelectedView = (viewNo) => {
             signInWrap.style.display = 'none';
             writenWrap.style.display = 'none';
             listWrap.style.display = 'block';
-            
+
             break;
     }
 }
