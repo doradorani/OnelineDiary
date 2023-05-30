@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/index.css">
+
+    <script src="./js/db.js"></script>
+    <script src="./js/signinSession.js"></script>
+    <script src="./js/viewChange.js"></script>
+    <script src="./js/index.js"></script>
+</head>
+<body>
+    <div id="wrap">
+
+        <div class="title_wrap">
+            Oneline Diary
+        </div>
+
+        <div class="menu_wrap">
+            <a href="#none" class="sign_up">Sign-up</a>
+            <a href="#none" class="sign_in">Sign-in</a>
+            <a href="#none" class="sign_out">Sign-out</a>
+            <a href="#none" class="write">Write</a>
+            <a href="#none" class="list">List</a>
+        </div>
+
+        <div class="sign_up_wrap">
+            <input type="text" name="u_id" placeholder="Input user ID">
+            <br/>
+            <input type="password" name="u_pw" placeholder="Input user PW">
+            <br/>
+            <input type="email" name="u_mail" placeholder="Input user MAIL">
+            <br/>
+            <input type="button" value="SIGN UP">
+        </div>
+
+        <div class="sign_in_wrap">
+            <input type="text" name="u_id" placeholder="Input user ID">
+            <br/>
+            <input type="password" name="u_pw" placeholder="Input user PW">
+            <br/>
+            <input type="button" value="SIGN IN">
+        </div>
+
+        <div class="write_wrap">
+            <input type="text"><button>Write</button>
+        </div>
+
+        <div class="list_wrap">
+            
+        </div>
+
+
+    </div>
+</body>
+</html>
+
+
+<template id="list_item">
+    <div class="txt"></div>
+</template>
